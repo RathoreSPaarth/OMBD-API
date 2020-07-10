@@ -9,7 +9,7 @@ function fetchMovie(){
         row.removeChild(row.firstChild)
     }
 
-    axios.get('http://www.omdbapi.com/?apikey=b186daa5&s='+ movieName.value)
+    axios.get('//www.omdbapi.com/?apikey=b186daa5&s='+ movieName.value)
     .then((res)=>{
         console.log(res.data.Search)
 
