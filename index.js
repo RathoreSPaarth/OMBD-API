@@ -11,6 +11,11 @@ function fetchMovie(){
 
     axios.get('//www.omdbapi.com/?apikey=b186daa5&s='+ movieName.value)
     .then((res)=>{
+        let list = res.data.Search
+        if(list == undefined)
+        alert('ENTER A VALID MOVIE NAME!')
+    })
+    .then((res)=>{
         console.log(res.data.Search)
 
         let list = res.data.Search
