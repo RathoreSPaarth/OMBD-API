@@ -44,8 +44,8 @@ function fetchMovie(){
            let image = document.getElementById('poster-image')
 
           
-           if(list == undefined)
-            alert('ENTER A VALID MOVIE NAME!')
+//            if(list == undefined)
+//             alert('ENTER A VALID MOVIE NAME!')
 
            y.appendChild(poster)
            x.appendChild(y)
